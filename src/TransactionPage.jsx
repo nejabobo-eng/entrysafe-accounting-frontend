@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './TransactionPage.css'
 
-const API_BASE_URL = 'http://localhost:8000'
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
 
 function TransactionPage() {
   const [ownerId, setOwnerId] = useState('test_user_001')
